@@ -14,7 +14,7 @@
  *
  * @package WordPress
  * @author Hugh Lashbrooke
- * @since 1.0.0
+ * @since 1.0.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -65,3 +65,48 @@ function global_balkan_top_header() {
 }
 
 global_balkan_top_header();
+
+function icl_other_languagess(){
+	if ( function_exists('icl_object_id') ) {
+			$languages = icl_get_languages('skip_missing=1');
+			if(1 < count($languages)){
+			echo '<ul class="dropdown-menu" role="menu">';
+			foreach($languages as $l){
+				if(!$l['active']) $langs[] = '<li><a href="'.$l['url'].'">'.fix_lang_code( $l['language_code'] ).'</a></li>';
+			}
+			echo join(' ', $langs);
+			echo '</ul>';
+			}
+	} else {
+		 echo 'no other langs';
+	}
+}
+
+function fix_lang_code($code) {
+  switch ($code) {
+    case 'sq':
+      $code = 'al';
+      break;
+    default:
+      $code = $code;
+      break;
+  }
+  return $code;
+}
+
+function get_lang_code($value='') {
+	if ( function_exists('icl_object_id') ) {
+		return ICL_LANGUAGE_CODE;
+	} else {
+		return 'no lang code';
+	}
+}
+
+// Add some text after the header
+add_action ('wp_head' , 'add_header', 20);
+function add_header() {
+	$instance = Global_Top_Header::instance( __FILE__, '1.0.0' );
+  // Echo the html
+  echo "<div>Special offer! June only: Free chocolate for everyone!</div>";
+	include_once( 'template.php' );
+}
