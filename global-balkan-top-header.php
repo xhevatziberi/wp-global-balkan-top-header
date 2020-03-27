@@ -25,7 +25,7 @@ include_once('updater.php');
 if (is_admin()) { // note the use of is_admin() to double check that this is happening in the admin
 	$config = array(
 		'slug' => plugin_basename(__FILE__), // this is the slug of your plugin
-		'proper_folder_name' => 'plugin-name', // this is the name of the folder your plugin lives in
+		'proper_folder_name' => 'wp-global-balkan-top-header-master', // this is the name of the folder your plugin lives in
 		'api_url' => 'https://api.github.com/repos/xhevatziberi/wp-global-balkan-top-header', // the GitHub API url of your GitHub repo
 		'raw_url' => 'https://raw.github.com/xhevatziberi/wp-global-balkan-top-header/master', // the GitHub raw url of your GitHub repo
 		'github_url' => 'https://github.com/xhevatziberi/wp-global-balkan-top-header', // the GitHub url of your GitHub repo
