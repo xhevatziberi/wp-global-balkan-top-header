@@ -94,6 +94,7 @@ function add_header() {
 	include_once( 'template.php' );
 }
 
+
 /*updater*/
 add_action( 'init', 'github_plugin_updater_test_init' );
 function github_plugin_updater_test_init() {
@@ -123,3 +124,11 @@ function github_plugin_updater_test_init() {
 	}
 
 }
+
+/*updater 2*/
+/*require 'path/to/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'http://example.com/path/to/details.json',
+	__FILE__, //Full path to the main plugin file or functions.php.
+	'unique-plugin-or-theme-slug'
+);*/
