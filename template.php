@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="vc_col-sm-12 vc_col-md-5">
-                    <h3>ADEL HOLDING</h3>
-                    <p>ADEL Holding is a group of companies working in different business fields: construction, logistics, real estate, trade, distribution and marketing and advertising.</p>
+                  <h3>GLOBAL BALKAN</h3>
+                  <p>Global Ballkan is a company that brings you quality and correctness. Spread across several sectors, Global Balkan enables you to easily make your choice in construction, central heating and ceramic tiles.</p>
                 </div>
                 <div class="vc_col-xs-12 vc_col-sm-2 vc_col-md-2">
                     <div class="choose-country">
@@ -17,19 +17,19 @@
                             <li class="dropdown open" style="width: 33%;">
                                 <a class="dropdown-toggle" href="#industryId-1">
                                   <i class="icon-activities-marketing"></i>
-                                  <span class="industry second hidden-phone">Marketing</span>
+                                  <span class="industry second hidden-phone">Construction</span>
                                 </a>
                             </li>
                             <li class="dropdown" style="width: 33%;">
                                 <a class="dropdown-toggle" href="#industryId-2">
                                   <i class="icon-activities-construction"></i>
-                                  <span class="industry second hidden-phone">Construction</span>
+                                  <span class="industry second hidden-phone">Ceramic</span>
                                 </a>
                             </li>
               							<li class="dropdown" style="width: 33%;">
                               <a class="dropdown-toggle" href="#industryId-3">
                                 <i class="icon-activities-logistics"></i>
-              									<span class="industry second hidden-phone">Distribution</span>
+              									<span class="industry second hidden-phone">HVAC</span>
               								</a>
                             </li>
                         </ul>
@@ -86,7 +86,7 @@
         <div class="container">
             <div class="row">
                 <div class="vc_vc_col-sm-2 vc_vc_col-md-2">
-                    <button class="btn-link" id="topbar-toggle" type="button">ADEL HOLDING&nbsp;<span class="caret"></span>
+                    <button class="btn-link" id="topbar-toggle" type="button">GLOBAL BALKAN&nbsp;<span class="caret"></span>
                     </button>
                 </div>
                 <div class="vc_vc_col-sm-10 vc_vc_col-md-10">
@@ -114,11 +114,9 @@
                         <li class="choose-country">
                             <a href="#!"><i class="icon-world-map"></i></a>
                         </li>
-                        <li><a href="#!">Publications</a>
+                        <li><a href="#!">Sectors</a>
                         </li>
-                        <li><a href="#!">Tenders</a>
-                        </li>
-                        <li><a href="#!">Work</a>
+                        <li><a href="#!">Career</a>
                         </li>
                         <li><a href="#!">Contacts</a>
                         </li>
