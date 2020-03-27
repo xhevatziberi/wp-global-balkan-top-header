@@ -1,5 +1,5 @@
 <div class="topbar topbar-hide">
-    <div class="topbar-content" style="height: 0px;">
+    <div class="topbar-content bootstrap-wrapper" style="height: 0px;">
         <div class="container">
             <div class="row">
                 <div class="vc_col-sm-12 vc_col-md-5">
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <div class="global-nav">
+    <div class="global-nav bootstrap-wrapper">
         <div class="container">
             <div class="row">
                 <div class="vc_vc_col-sm-2 vc_vc_col-md-2">

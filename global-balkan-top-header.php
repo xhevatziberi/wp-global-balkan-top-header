@@ -90,7 +90,7 @@ add_action ('wp_head' , 'add_header', 20);
 function add_header() {
 	$instance = Global_Balkan_Top_Header::instance( __FILE__, '1.0.0' );
   // Echo the html
-  echo "<div>Special offer! June only: Free chocolate for everyone!</div>";
+  //echo "<div>Special offer! June only: Free chocolate for everyone!</div>";
 	include_once( 'template.php' );
 }
 
