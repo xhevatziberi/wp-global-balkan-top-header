@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Global Balkan Top Header
- * Version: 1.0.0
+ * Version: 1.0.1
  * Plugin URI: http://www.hughlashbrooke.com/
  * Description: This is your starter template for your next WordPress plugin.
  * Author: Hugh Lashbrooke
@@ -14,7 +14,7 @@
  *
  * @package WordPress
  * @author Hugh Lashbrooke
- * @since 1.0.1
+ * @since 1.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
