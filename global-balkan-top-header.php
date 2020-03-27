@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Global Balkan Top Header
- * Version: 1.0.3
+ * Version: 1.0.4
  * Plugin URI: http://www.hughlashbrooke.com/
  * Description: This is your starter template for your next WordPress plugin.
  * Author: Hugh Lashbrooke
