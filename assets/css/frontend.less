@@ -9,6 +9,7 @@
     font-style: normal;
 
 }
+
 body.boxed_layout #wrapper {
 	margin: 0 auto;
 }
@@ -84,7 +85,7 @@ body.boxed_layout #wrapper {
 
 .topbar .choose-country {
 	text-align: center;
-	margin-top: 60px;
+	margin-top: 0;
 }
 
 .topbar .choose-country a {
@@ -121,7 +122,8 @@ body.boxed_layout #wrapper {
 .topbar .activities-icons li {
 	display: block;
 	float: left;
-	padding: 0 10px;
+	padding: 0 5px;
+  margin: 0;
 	position: static;
 }
 
@@ -171,6 +173,11 @@ body.boxed_layout #wrapper {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+  float: left;
+}
+.topbar .activities .dropdown-menu ul li {
+	margin: 0;
+  padding: 0;
 }
 
 .topbar .activities-list .open {
@@ -541,7 +548,18 @@ body.boxed_layout #wrapper {
   content: " ";
   display: table;
 }
+.container:before {
+  content: " ";
+  display: table;
+}
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
 .container:after {
+  content: " ";
+  display: table;
   clear: both;
 }
 .vc_col-lg-1,.vc_col-lg-10,.vc_col-lg-11,.vc_col-lg-12,.vc_col-lg-2,.vc_col-lg-3,.vc_col-lg-4,.vc_col-lg-5,.vc_col-lg-6,.vc_col-lg-7,.vc_col-lg-8,.vc_col-lg-9,.vc_col-md-1,.vc_col-md-10,.vc_col-md-11,.vc_col-md-12,.vc_col-md-2,.vc_col-md-3,.vc_col-md-4,.vc_col-md-5,.vc_col-md-6,.vc_col-md-7,.vc_col-md-8,.vc_col-md-9,.vc_col-sm-1,.vc_col-sm-10,.vc_col-sm-11,.vc_col-sm-12,.vc_col-sm-2,.vc_col-sm-3,.vc_col-sm-4,.vc_col-sm-5,.vc_col-sm-6,.vc_col-sm-7,.vc_col-sm-8,.vc_col-sm-9,.vc_col-xs-1,.vc_col-xs-10,.vc_col-xs-11,.vc_col-xs-12,.vc_col-xs-2,.vc_col-xs-3,.vc_col-xs-4,.vc_col-xs-5,.vc_col-xs-6,.vc_col-xs-7,.vc_col-xs-8,.vc_col-xs-9 {
@@ -628,3 +646,43 @@ body.boxed_layout #wrapper {
   }
 }
 /*Responsive grid end*/
+
+.topbar .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .topbar .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .topbar .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .topbar .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .topbar .container {
+    max-width: 1140px;
+  }
+}
+
+.topbar .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
