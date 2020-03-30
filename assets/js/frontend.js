@@ -6,79 +6,64 @@
 
 jQuery( document ).ready(
 	function ( $ ) {
-		/*
-		$("#grupacioni").on("click", ".vc_toggle .vc_toggle_title", function(){
-			//console.log("klik");
-			$parent = $(this).parent().parent();
-			if( $parent.hasClass("sc-dummy") ) {
-				//$parent.removeClass("sc-dummy");
-				setTimeout(function() {
-					$parent.removeClass("sc-dummy");
-				}, 300);
-			}
-			else {
-				$parent.addClass("sc-dummy");
-			}
-		})
-		*/
 
-		function b() {
-			clearTimeout(w);
-			r.removeClass("open");
-			r.animate({
+		function close_content() {
+			clearTimeout(open_content);
+			content.removeClass("open");
+			content.animate({
 				height: 0
-			}, s ? 200 : 300);
-			i.removeClass("dropup")
+			}, is_desktop ? 200 : 300);
+			toggle.removeClass("dropup")
 		}
 
-		function k(t) {
-			if (i.hasClass("dropup")) {
-				t != null && t && b();
+		function open(t) {
+			if (toggle.hasClass("dropup")) {
+				t != null && t && close_content();
 				return
 			}
-			w = setTimeout(function() {
-				var n = r.find(".container").outerHeight();
-				r.animate({
-					height: n + "px"
+			open_content = setTimeout(function() {
+				var height = content.find(".container").outerHeight();
+				content.animate({
+					height: height + "px"
 				}, 200, function() {
-					r.addClass("open")
+					content.addClass("open")
 				});
-				i.addClass("dropup")
+				toggle.addClass("dropup")
 			}, 100);
-			$("#widgets").removeClass("open")
 		}
 
-		function pt() {
-			k(!1)
+		function toggle_desktop() {
+			open(false)
 		}
 
-		function wt() {
-			k(!0)
+		function toggle_mobile() {
+			open(true)
 		}
 
-		var i = $("#topbar-toggle"),
-			yt = $(".topbar"),
-			r = $(".topbar-content"),
-			s, w, h, c, d, l, g, nt, tt, it, rt, ut, ft, a, f, ot, st, p, vt, t;
+		var toggle = $("#topbar-toggle"),
+			topbar = $(".topbar"),
+			content = $(".topbar-content"),
+			is_desktop, open_content;
 		setTimeout(function() {
-			s = !$("html").hasClass("ua-desktop");
-			yt.on("mouseleave", b);
-			if (s) i.on("mouseenter", pt);
-			i.on("click", wt)
+			is_desktop = !$("html").hasClass("ua-desktop");
+			topbar.on("mouseleave", close_content);
+			if (is_desktop) toggle.on("mouseenter", toggle_desktop);
+			toggle.on("click", toggle_mobile)
 		}, 100);
-		$(".htmlContent table").wrap("<div class='tableOverflow'><\/div>");
-		$(".activities .dropdown").click(function(t) {
+
+    /*open activities*/
+    $(".activities .dropdown a").on("click", function(t) {
 			t.preventDefault();
-			var i = $(this).find("a").attr("href");
-			$(this).addClass("open").siblings(".dropdown").removeClass("open");
-			$(i).addClass("open").siblings(".dropdown-menu").removeClass("open")
+      var a = $(this).attr("href");
+			$(this).parent().addClass("open").siblings(".dropdown").removeClass("open");
+			$(a).addClass("open").siblings(".dropdown-menu").removeClass("open")
 		});
 
-
+    /*open search on mobile*/
 		$(".dropdown-toggler_search-btn").on("click", function() {
-			console.log('hini');
 			$(this).parent().addClass("opened");
 		});
+    /*close top header*/
 		$(document).on("click", function(t) {
 			$(t.target).closest(".dropdown-toggler_search-btn").length || $(t.target).closest(".search.dropdown-menu").length || $(".dropdown_header-search").removeClass("opened")
 		});
