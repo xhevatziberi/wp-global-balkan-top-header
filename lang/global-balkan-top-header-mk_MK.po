@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-03-30 13:42+0200\n"
+"PO-Revision-Date: 2020-03-30 19:47+0200\n"
 "Language-Team: \n"
 "X-Generator: Poedit 2.3\n"
 "Last-Translator: \n"
@@ -430,15 +430,15 @@ msgstr ""
 
 #. Template Files
 msgid "Construction"
-msgstr ""
+msgstr "Градежништво"
 
 #. Template Files
 msgid "Ceramic"
-msgstr ""
+msgstr "Керамика"
 
 #. Template Files
 msgid "HVAC"
-msgstr ""
+msgstr "Греење"
 
 #. Template Files
 msgid "Sectors"

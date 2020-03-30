@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Global Balkan Top Header
- * Version: 1.0.8
+ * Version: 1.1.0
  * Plugin URI: https://github.com/xhevatziberi/wp-global-balkan-top-header
  * Description: A plugin to display a top header for all Global Balkan sites.
  * Author: Xhevat Ziberi

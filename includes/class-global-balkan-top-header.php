@@ -243,7 +243,7 @@ class Global_Balkan_Top_Header {
 	 * @since   1.0.0
 	 */
 	public function load_localisation() {
-		load_plugin_textdomain( 'global-balkan-top-header', false, dirname( plugin_basename( $this->file ) ) . '/lang/' );
+		load_plugin_textdomain( 'global-balkan-top-header', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
 	} // End load_localisation ()
 
 	/**
