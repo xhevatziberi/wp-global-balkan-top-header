@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Global Balkan Top Header
- * Version: 1.0.5
- * Plugin URI: http://www.hughlashbrooke.com/
- * Description: This is your starter template for your next WordPress plugin.
- * Author: Hugh Lashbrooke
- * Author URI: http://www.hughlashbrooke.com/
+ * Version: 1.0.6
+ * Plugin URI: https://github.com/xhevatziberi/wp-global-balkan-top-header
+ * Description: A plugin to display a top header for all Global Balkan sites.
+ * Author: Xhevat Ziberi
+ * Author URI: https://github.com/xhevatziberi
  * Requires at least: 4.0
  * Tested up to: 4.0
  *
@@ -13,7 +13,7 @@
  * Domain Path: /lang/
  *
  * @package WordPress
- * @author Hugh Lashbrooke
+ * @author Xhevat Ziberi
  * @since 1.0.0
  */
 
@@ -49,7 +49,7 @@ function global_balkan_top_header() {
 
 global_balkan_top_header();
 
-function icl_other_languagess(){
+function icl_other_languages(){
 	if ( function_exists('icl_object_id') ) {
 			$languages = icl_get_languages('skip_missing=1');
 			if(1 < count($languages)){
@@ -61,7 +61,7 @@ function icl_other_languagess(){
 			echo '</ul>';
 			}
 	} else {
-		 echo 'no other langs';
+		 echo ''; //no other langs
 	}
 }
 
@@ -81,7 +81,7 @@ function get_lang_code($value='') {
 	if ( function_exists('icl_object_id') ) {
 		return ICL_LANGUAGE_CODE;
 	} else {
-		return 'no lang code';
+		return ''; //no lang code
 	}
 }
 

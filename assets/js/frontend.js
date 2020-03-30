@@ -75,12 +75,12 @@ jQuery( document ).ready(
 		});
 
 
-		$(".dropdown-toggle_search-btn").on("click", function() {
+		$(".dropdown-toggler_search-btn").on("click", function() {
 			console.log('hini');
 			$(this).parent().addClass("opened");
 		});
 		$(document).on("click", function(t) {
-			$(t.target).closest(".dropdown-toggle_search-btn").length || $(t.target).closest(".search.dropdown-menu").length || $(".dropdown_header-search").removeClass("opened")
+			$(t.target).closest(".dropdown-toggler_search-btn").length || $(t.target).closest(".search.dropdown-menu").length || $(".dropdown_header-search").removeClass("opened")
 		});
 	}
 );

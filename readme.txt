@@ -1,19 +1,17 @@
 === Global Balkan Top Header ===
-Contributors: hlashbrooke
-Donate link: http://www.hughlashbrooke.com/donate
+Contributors: xhevatziberi
 Tags: wordpress, plugin, template
 Requires at least: 3.9
 Tested up to: 4.0
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-~Current Version:1.0.2~
 
-This is where you craft a short, punchy description of your plugin
+A top header plugin
 
 == Description ==
 
-This is where you can give a much longer description of your plugin that you can use to explain just how it awesome it really is.
+A plugin to display a top header for all Global Balkan sites.
 
 == Installation ==
 
@@ -33,16 +31,16 @@ Installing "Global Balkan Top Header" can be done either by searching for "Globa
 
 = What is the plugin template for? =
 
-This plugin template is designed to help you get started with any new WordPress plugin.
+This plugin template is designed to display a top header for all Global Balkan Sites.
 
 == Changelog ==
 
 = 1.0 =
-* 2012-12-13
+* 2020-03-30
 * Initial release
 
 == Upgrade Notice ==
 
 = 1.0 =
-* 2012-12-13
+* 2020-03-30
 * Initial release

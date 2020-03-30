@@ -24,6 +24,7 @@ body.boxed_layout #wrapper {
 
 .topbar * {
 	font-family: 'Optima', sans-serif;
+  line-height: 1.5;
 }
 .topbar .fa {
     font: normal normal normal 14px/1 FontAwesome;;
@@ -131,6 +132,7 @@ body.boxed_layout #wrapper {
 	display: block;
 	padding: 0 10px;
 	opacity: 0.5;
+  position: relative;
 }
 
 .topbar .activities-icons a:hover,
@@ -246,7 +248,7 @@ body.boxed_layout #wrapper {
 .dropup .caret,.navbar-fixed-bottom .dropdown .caret {
     border-top: 0;
     border-bottom: 4px solid;
-    content: ""
+    content: "" !important;
 }
 .btn .caret {
     margin-left: 0
@@ -297,6 +299,7 @@ body.boxed_layout #wrapper {
 	margin: 0;
 	border: 0;
 	min-width: 100%;
+	min-width: calc(100% - 33px);
 	box-shadow: none;
 	display: none;
 }
@@ -390,6 +393,8 @@ body.boxed_layout #wrapper {
 .icon-activities-petrochemicals {background: url(../img/icon-activities-petrochemicals.svg) no-repeat center center;}
 .icon-activities-power {background: url(../img/icon-activities-power.svg) no-repeat center center;}
 .icon-activities-marketing {background: url(../img/icon-activities-marketing.svg) no-repeat center center;}
+.icon-activities-ceramic {background: url(../img/icon-activities-ceramic.svg) no-repeat center center;}
+.icon-activities-hvac {background: url(../img/icon-activities-hvac.svg) no-repeat center center;}
 .icon-content-h-archive {background: url(../img/icon-content-h-archive.svg) no-repeat center center;}
 .icon-content-h-contacts {background: url(../img/icon-content-h-contacts.svg) no-repeat center center;}
 .icon-content-h-related {background: url(../img/icon-content-h-related.svg) no-repeat center center;}
@@ -427,6 +432,7 @@ body.boxed_layout #wrapper {
     width: 100%;
     margin-bottom: 0;
 	display: table-cell;
+  line-height: 1.5;
 }
 
 .topbar .input-group-btn {
@@ -484,7 +490,7 @@ body.boxed_layout #wrapper {
 		display: block;
 	}
 
-	.dropdown-toggle_search-btn {
+	.dropdown-toggler_search-btn {
 		display: none;
 	}
 	.vc_col-sm-2 {
@@ -685,4 +691,15 @@ body.boxed_layout #wrapper {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+#top-area-searchsubmit i.fa-search {
+  content: url(../img/icon-search-red.svg);
+  width: 15px;
+  height: 20px;
+}
+.dropdown-toggler_search-btn i.fa-search {
+  content: url(../img/icon-search-white.svg);
+  width: 15px;
+  height: 20px;
 }

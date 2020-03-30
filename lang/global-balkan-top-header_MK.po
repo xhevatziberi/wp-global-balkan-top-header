@@ -5,15 +5,15 @@ msgstr ""
 "Project-Id-Version: Global Balkan Top Header 1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/WordPress-Plugin-Template\n"
 "POT-Creation-Date: 2020-03-27 17:41+0100\n"
-"PO-Revision-Date: 2020-03-27 17:50+0100\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-03-30 13:42+0200\n"
+"Language-Team: \n"
 "X-Generator: Poedit 2.3\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n%10==1 && n%100!=11);\n"
+"Language: mk\n"
 
 #: classes/post-types/class-global-balkan-top-header-post_type.php:52
 #: includes/post-types/class-global-balkan-top-header-post_type.php:42
@@ -411,15 +411,11 @@ msgstr ""
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
-msgid "http://www.hughlashbrooke.com/"
+msgid "https://github.com/xhevatziberi/wp-global-balkan-top-header"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Hugh Lashbrooke"
-msgstr ""
-
-#. Template Files
-msgid "GLOBAL BALKAN"
+msgid "Xhevat Ziberi"
 msgstr ""
 
 #. Template Files
@@ -428,3 +424,30 @@ msgid ""
 "across several sectors, Global Balkan enables you to easily make your choice "
 "in construction, central heating and ceramic tiles."
 msgstr ""
+"Глобал Балкан е компанија која обезбедува квалитет и коректен однос. "
+"Распространето низ неколку сектори, Глобал Балкан ви овозможува лесно да го "
+"направите вашиот избор во градежништво, централно греење и керамички плочки."
+
+#. Template Files
+msgid "Construction"
+msgstr ""
+
+#. Template Files
+msgid "Ceramic"
+msgstr ""
+
+#. Template Files
+msgid "HVAC"
+msgstr ""
+
+#. Template Files
+msgid "Sectors"
+msgstr "Сектори"
+
+#. Template Files
+msgid "Career"
+msgstr "Кариера"
+
+#. Template Files
+msgid "Contacts"
+msgstr "Контакти"
