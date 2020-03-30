@@ -78,14 +78,14 @@
                 <div class="col-6 col-sm-10 col-md-10">
                     <ul class="global-menu-controls">
                         <li class="dropdown dropdown_header-search">
-                            <a href="javascript:void(0);" class="dropdown-toggler dropdown-toggler_search-btn"><i class="fa fa-search"></i></a>
+                            <a href="javascript:void(0);" class="dropdown-toggler dropdown-toggler_search-btn"><i class="gb gb-search"></i></a>
                             <ul class="search dropdown-menu">
                                 <li class="input-group">
                 									<form role="search" method="get" id="top-area-searchform" class="searchform" action="http://globalbalkan.mk/" onsubmit="return submitSearchForm(this)" novalidate="novalidate">
                                     <input type="text" value="" name="s" id="top-area-s" class="form-control inputSearchQuery" placeholder="Search">
                                     <input type="hidden" name="q" class="searchQuery">
                                     <span class="input-group-btn">
-                											<button id="top-area-searchsubmit" class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                											<button id="top-area-searchsubmit" class="btn btn-default" type="submit"><i class="gb gb-search"></i></button>
                 										</span>
                                   </form>
                                 </li>
