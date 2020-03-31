@@ -10,6 +10,7 @@
 
 }
 
+
 body.boxed_layout #wrapper {
 	margin: 0 auto;
 }
@@ -22,6 +23,12 @@ body.boxed_layout #wrapper {
 	z-index: 999;
 }
 
+.topbar *,
+.topbar *::before,
+.topbar *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
 .topbar * {
 	font-family: 'Optima', sans-serif;
   line-height: 1.5;
@@ -108,6 +115,9 @@ body.boxed_layout #wrapper {
 .topbar .activities a.company {
   margin-top: 10px;
   float: left;
+}
+.topbar .activities a.company img {
+  max-width: 100%;
 }
 .topbar .activities a.sector {
   vertical-align: middle;
@@ -256,6 +266,7 @@ body.boxed_layout #wrapper {
 
 .topbar .global-nav .btn-link:hover {
 	color: #e9929a;
+  background-color: transparent !important;
 }
 .caret {
     display: inline-block;

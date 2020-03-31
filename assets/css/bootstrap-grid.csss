@@ -14,13 +14,6 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
 .bootstrap-wrapper {
   /**
  * Bootstrap overrides
