@@ -70,7 +70,6 @@ body.boxed_layout #wrapper {
 .topbar a,
 .topbar .btn-link {
 	color: #FFFFFF !important;
-	padding: 0 5px 0 11px;
 	text-decoration: none;
 }
 
@@ -104,6 +103,24 @@ body.boxed_layout #wrapper {
 	margin: 0px 0 -7px 0;
 	position: relative;
 	top: -2px;
+}
+
+.topbar .activities a.company {
+  margin-top: 10px;
+  float: left;
+}
+.topbar .activities a.sector {
+  vertical-align: middle;
+  display: table;
+  margin: 0 auto;
+}
+.topbar .activities a.sector i,
+.topbar .activities a.sector span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.topbar .activities a.sector span {
+  padding-left: 3px;
 }
 
 .topbar .activities i {
@@ -276,6 +293,14 @@ body.boxed_layout #wrapper {
 	float: right;
 }
 
+.topbar .global-nav .global-menu li a {
+	padding: 0 5px;
+}
+
+.topbar .global-nav .global-menu-controls a {
+	padding: 0 5px 0 10px;
+}
+
 .topbar .global-nav .global-menu-controls #lang {
 	text-transform: uppercase;
 }
@@ -317,7 +342,6 @@ body.boxed_layout #wrapper {
 .topbar .global-nav .dropdown-menu a {
 	background: #DB2B36;
 	color: #FFFFFF;
-	padding: 3px 10px;
 	line-height: 1.5em;
 }
 
@@ -589,14 +613,18 @@ body.boxed_layout #wrapper {
     display: none !important;
   }
   .topbar .global-nav .global-menu {
-	margin-top: 12px;
-	float: left;
+    margin-top: 12px;
+    float: left;
+    float: none;
+    text-align: center;
   }
   .topbar .global-nav .global-menu > li {
-	margin: 0
+    margin: 0;
+    float: none;
+    display: inline-block;
   }
-  .topbar a {
-	padding: 0 4px;
+  .topbar .about {
+    text-align: center;
   }
 }
 /*Responsive grid end*/
